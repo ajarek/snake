@@ -25,6 +25,9 @@ body {
     outline: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.active {
+.snake {
     background: rgb(185, 241, 185);
+}
+.apple{
+    background-image: url('apple.png');
 }
