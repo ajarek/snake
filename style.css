@@ -34,14 +34,16 @@ body {
 }
 
 .snake {
-    background: rgb(185, 241, 185);
-    border-radius: 50%;
+    background: #219D00;
+    border-radius: 50%;   
 }
 .apple{
     background-image: url('apple.png');
-    background-size: cover;
+    background-size:cover;
 }
 .head{
-    background: violet;
+    background: url('833719.png');
     border-radius: 50%;
+    background-size: cover;
+    background-color: #219D00;
 }

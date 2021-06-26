@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+
     const squares = document.querySelectorAll('.square')
     const scoreDisplay = document.querySelector('span')
     const startBtn = document.querySelector('.start')
@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
       currentIndex = 0
       currentSnake.forEach(index => squares[index].classList.add('snake'))
       startBtn.removeEventListener('click', startGame)
-      interval = setInterval(moveOutcomes, intervalTime)
+      interval = setInterval(motion, intervalTime)
     }
   
   
     
-    function moveOutcomes() {
+    function motion() {
   
       
       if (
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scoreDisplay.textContent = score
         clearInterval(interval)
         intervalTime = intervalTime * speed
-        interval = setInterval(moveOutcomes, intervalTime)
+        interval = setInterval(motion, intervalTime)
       }
       squares[currentSnake[0]].classList.add('snake')
     }
@@ -93,5 +93,5 @@ document.addEventListener('DOMContentLoaded', () => {
   
     document.addEventListener('keyup', control)
     startBtn.addEventListener('click', startGame)
-  })
+  
 
