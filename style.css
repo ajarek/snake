@@ -11,39 +11,62 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #cdf3c3;
 }
-.start{
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
     font-size: 1.5rem;
     padding: 5px 15px;
+    background: #219D00;
+    color: white;
+    border-radius: 5px;
+    border: none;
 }
-.h3{
+
+.start:hover {
+    transform: scale(0.9);
+}
+
+.h3 {
     display: flex;
 }
 
 .container {
-    width: 465px;
-    height: 465px;
+    width: 456px;
+    height: 456px;
     display: flex;
     flex-wrap: wrap;
+    background-color: #cdf3c3;
+    border: 3px solid gray;
+    border-radius: 5px;
 }
 
 .square {
     width: 30px;
     height: 30px;
-    outline: 1px solid rgba(0, 0, 0, 0.3);
+    outline: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .snake {
     background: #219D00;
-    border-radius: 50%;   
+    border-radius: 50%;
 }
-.apple{
+
+.apple {
     background-image: url('apple.png');
-    background-size:cover;
+    background-size: cover;
 }
-.head{
+
+.head {
     background: url('833719.png');
     border-radius: 50%;
     background-size: cover;
     background-color: #219D00;
 }
+
